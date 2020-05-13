@@ -1,0 +1,5 @@
+[build]
+target = "target.json"
+
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"

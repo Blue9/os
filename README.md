@@ -5,10 +5,13 @@ Simple operating system in Rust
 
 Run
 
-    rustup target add thumbv7em-none-eabihf
+    cargo install cargo-xbuild
+    cargo install bootimage
+    rustup component add llvm-tools-preview
 
 # Build
 
 Run
 
-    cargo build --target thumbv7em-none-eabihf
+    cargo bootimage
+    cargo xrun
